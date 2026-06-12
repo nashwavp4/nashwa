@@ -82,6 +82,37 @@
 # for i in range(1,11):
 #     print(i)  
 
-for i in range(1,101):
-    if i % 2==0:
-        print(i)
+# for i in range(1,101):
+#     if i % 2==0:
+#         print(i)
+
+# i=1
+# while i <= 10:
+#  print(i)
+#  i += 1
+
+# i=1
+# while i<=10:
+#      if i % 2==0:
+#         print(i)
+#      i += 1
+
+# def add (a,b):
+#     return a + b
+# result = add(6,5)
+# print("the sum is:", result)
+
+# def celsius_to_fahrenheit(celsius):
+#     fahrenheit = (celsius * 9/5) + 32
+#     return fahrenheit
+# celsius_val = 25
+# fahrenheit_val = celsius_to_fahrenheit(celsius_val)
+# print(f"{celsius_val} degreecelsius is equal to {fahrenheit_val} degreefahrenheit")
+
+def sum_of_prime(limit):
+    prime_sum = 0
+    for num in range(2, limit + 1):
+        if all(num % i !=0 for i in range(2, int(num**0.5) + 1)):
+            prime_sum += num
+    return prime_sum
+print(f"the sum is:{sum_of_prime(100)}")
