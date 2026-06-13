@@ -109,10 +109,45 @@
 # fahrenheit_val = celsius_to_fahrenheit(celsius_val)
 # print(f"{celsius_val} degreecelsius is equal to {fahrenheit_val} degreefahrenheit")
 
-def sum_of_prime(limit):
-    prime_sum = 0
-    for num in range(2, limit + 1):
-        if all(num % i !=0 for i in range(2, int(num**0.5) + 1)):
-            prime_sum += num
-    return prime_sum
-print(f"the sum is:{sum_of_prime(100)}")
+# def sum_of_prime(limit):
+#     prime_sum = 0
+#     for num in range(2, limit + 1):
+#         if all(num % i !=0 for i in range(2, int(num**0.5) + 1)):
+#             prime_sum += num
+#     return prime_sum
+# print(f"the sum is:{sum_of_prime(100)}")
+
+
+# x=lambda a,b: a+b
+# print(x(2,3))
+
+# x=lambda a: a**0.5
+# print(x(4))
+
+# x=lambda a: " even " if a%2==0 else "odd"
+# print(x(4))
+
+# class Student:
+#  def __init__(self, name,age,marks):
+#        self.name=name
+#        self.age=age
+#        self.marks=marks
+# s1= Student("john",21,84)
+# s2= Student("james",22,94)
+# print(s1.name,s1.age,s1.marks)
+# print(s2.name,s2.age,s2.marks)
+
+
+# class Student:
+#  def __init__(self, name,age,marks):
+#        self.name=name
+#        self.age=age
+#        self.marks=marks
+#  def info(self):
+#     return f"my name is {self.name} and my mark is {self.marks} "
+# s1= Student("john",21,84)
+# s2= Student("james",22,94)
+# print(s1.name,s1.age,s1.marks)
+# print(s2.name,s2.age,s2.marks)
+# print(s1.info())
+# print(s2.info())
